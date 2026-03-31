@@ -18,6 +18,36 @@ hr {
 } /* rimuove l'elemento */
 
 /* HEADER */
+
+.icon {
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.228);
+  border: 3px solid white;
+  border-radius: 15%;
+  padding: 10px 15px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#first-icon {
+  position: fixed;
+  bottom: 25%;
+  right: 2%;
+  color: #3f6bca;
+}
+#second-icon {
+  position: fixed;
+  bottom: 15%;
+  right: 2%;
+  color: #3f6bca;
+}
+#third-icon {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  color: rgb(255, 60, 60);
+}
+
 header {
   position: sticky;
   top: 0;
@@ -204,6 +234,7 @@ aside h2 {
   margin-bottom: 1em;
 }
 aside div {
+  position: relative;
   background-color: #e3e3e3;
   border: 1px solid #c3c3c3;
   margin-bottom: 1em;
@@ -213,6 +244,14 @@ aside div p:last-child {
   margin-bottom: 0;
   font-size: 0.8em;
   text-align: right;
+}
+
+.fa-tag {
+  position: absolute;
+  color: rgb(203, 203, 203);
+  top: 8%;
+  right: 2%;
+  font-size: 3.5em;
 }
 
 /* FOOTER */
@@ -242,6 +281,21 @@ footer a {
   }
   h2 {
     font-weight: 800;
+  }
+  #first-icon {
+    position: fixed;
+    bottom: auto;
+    top: 2%;
+    font-size: 2em;
+  }
+  #second-icon {
+    position: fixed;
+    bottom: auto;
+    top: 18%;
+    font-size: 2em;
+  }
+  #third-icon {
+    font-size: 2em;
   }
 
   #news h2 {
