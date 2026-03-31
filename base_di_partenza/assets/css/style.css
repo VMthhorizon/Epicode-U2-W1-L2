@@ -1,0 +1,410 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Poppins, "Helvetica Neue", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 15px;
+  background-image: url("../img/sfondo.png");
+  background-position: center center;
+}
+* {
+  box-sizing: border-box;
+}
+hr {
+  display: none;
+} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: rgb(0, 160, 198);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 3px 3px #444;
+  margin-bottom: 1.5em;
+  padding: 2em 1.5em;
+}
+header div img {
+  margin-bottom: 20px;
+}
+header nav ul {
+  margin: 0;
+}
+header nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1rem;
+}
+header nav li a {
+  color: white;
+  text-decoration: none;
+}
+header nav li a:hover {
+  color: red;
+}
+header nav li a::before {
+  content: "\22c6\0020";
+}
+
+/* MAIN */
+main {
+  background-color: #fff;
+  box-shadow: 0 3px 3px #444;
+  padding: 2em 1em;
+  margin-bottom: 1.5em;
+}
+section {
+  background-color: #e3e3e3;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+section h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.7em;
+}
+.text-underline {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+h1 img {
+  position: absolute;
+  width: 100%;
+  right: 1%;
+  top: 80%;
+  z-index: -1;
+  opacity: 50%;
+}
+p,
+address,
+ul,
+ol,
+dl,
+blockquote {
+  margin-bottom: 1.2em;
+}
+h1 + p {
+  color: #a0a0a0;
+}
+ul,
+ol {
+  margin-left: 2em;
+}
+a {
+  color: #00a0c6;
+  font-weight: bold;
+}
+strong {
+  color: #a02571;
+  font-weight: bold;
+}
+code {
+  background-color: #e3e3e3;
+  border: 1px solid #969494;
+  border-radius: 5px;
+}
+iframe {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 20px;
+}
+
+#news {
+  position: relative;
+  margin: 2em 0;
+  padding: 4em 1em;
+  border-radius: 5%;
+}
+#news h2 {
+  font-size: 2em;
+  background-color: grey;
+  padding: 1rem;
+  position: absolute;
+  bottom: 65%;
+  left: 2%;
+}
+
+/* TABELLE */
+table {
+  margin-bottom: 2em;
+}
+caption {
+  font-weight: bold;
+  font-style: italic;
+}
+thead tr {
+  background-color: #3f6bca;
+  color: #ffffff;
+}
+th,
+td {
+  padding: 12px 15px;
+  vertical-align: bottom;
+  text-align: center;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+input {
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px dashed #333;
+}
+button {
+  padding: 4px 7px;
+  background-color: #3f6bca;
+  border: 0;
+  color: white;
+  font-weight: bold;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+aside div {
+  background-color: #e3e3e3;
+  border: 1px solid #c3c3c3;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+aside div p:last-child {
+  margin-bottom: 0;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* FOOTER */
+footer {
+  background: rgb(53, 53, 53);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
+  box-shadow: 0 3px 3px #444;
+  color: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+footer a {
+  color: fuchsia;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-weight: 800;
+  }
+
+  #news h2 {
+    font-size: 1.5em;
+    background-color: grey;
+    padding: 0.5rem 1em;
+    position: absolute;
+    bottom: 80%;
+    left: 5%;
+  }
+
+  #table {
+    text-align: center;
+    background-color: white;
+  }
+
+  table {
+    display: inline-block;
+  }
+
+  table td {
+    text-align: start;
+    width: 200px;
+  }
+
+  section h2 {
+    background-color: grey;
+  }
+  footer {
+    margin: 0 1rem;
+    font-size: 2.4rem;
+  }
+  form fieldset input {
+    height: 50px;
+    width: 67%;
+    padding: 1rem;
+  }
+  #form-btn {
+    height: 50px;
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    margin: 0 3em;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between; /* Spinge il div a sinistra e il nav a destra */
+    align-items: center;
+    padding: 2rem;
+  }
+  header nav ul {
+    display: flex; /* Mette i link del menu in riga anziché in colonna */
+    list-style-type: none; /* Rimuove i pallini della lista */
+    gap: 20px; /* Spazio tra i link del menu */
+    margin: 0;
+    padding: 0;
+  }
+  header > div {
+    display: flex; /* Rende anche questo div un contenitore flessibile */
+    align-items: center; /* Allinea verticalmente l'immagine e il testo */
+    gap: 15px; /* Spazio tra l'immagine e il testo 'Epicode - ...' */
+  }
+
+  header div img,
+  header div p {
+    margin: 0 0;
+  }
+  #table {
+    text-align: center;
+    background-color: white;
+  }
+
+  table {
+    display: inline-block;
+  }
+
+  table td {
+    text-align: start;
+    width: 400px;
+    padding-left: 2em;
+  }
+
+  table th {
+    text-align: start;
+  }
+
+  #news {
+    position: relative;
+    margin: 0 0;
+    padding: 1.5em 1em;
+    height: 10.5em;
+  }
+  #news h2 {
+    font-size: 1.2em;
+    background-color: grey;
+    padding: 0.5rem 1em;
+    position: absolute;
+    bottom: 77%;
+    left: 5%;
+  }
+
+  iframe,
+  #news {
+    display: inline-block;
+    vertical-align: top; /* Fondamentale per allinearli in alto, altrimenti si allineano alla base del testo */
+    width: 49%; /* Assegniamo una larghezza inferiore al 50% */
+    box-sizing: border-box; /* Assicura che padding e bordi non aumentino la larghezza impostata */
+  }
+
+  /* Opzionale: rendiamo il video fluido per occupare tutto il suo 48% */
+  iframe {
+    max-width: 49%;
+    height: 260px;
+    margin-right: 0;
+  }
+
+  aside {
+    text-align: start;
+  }
+  aside h2 {
+    font-size: 2em;
+  }
+  aside div {
+    display: inline-block;
+    width: 33%;
+  }
+}
+
+@media print {
+  body {
+    padding: 5em;
+    font-size: 1.5em;
+  }
+  header {
+    display: none;
+  }
+  article p {
+    font-size: 1.5em;
+  }
+  #logo,
+  #logo-text {
+    display: inline-block;
+    margin: 0; /* Rimuove margini che potrebbero spingere il testo a capo */
+  }
+
+  #logo {
+    width: 15%; /* Regola la larghezza del contenitore immagine */
+  }
+
+  #logo-text {
+    width: 80%; /* Regola la larghezza del testo (totale < 100%) */
+  }
+  ol {
+    font-size: 1.5em;
+  }
+  iframe,
+  #news,
+  aside,
+  footer {
+    display: none;
+  }
+}
